@@ -2,11 +2,13 @@
 
 before getting started, run <br />
 flutter pub get <br />
-API key is necessary to get the info. A non-prod API key (for testing) is available within .env directory. Please use it wise.
 
 ## Getting Started
 
-This project invokes REST API endpoints to get realtime domain availability using Flutter application.
+This project invokes REST API endpoints to get realtime domain availability using Flutter application. <br />
+API key is necessary to get the info.  <br />
+A non-prod API key (for testing) is available within .env directory. Please use it wise.
+
 
 ## Running the App
 
