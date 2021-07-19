@@ -2,10 +2,16 @@
 
 before getting started, run 
 flutter pub get
+API key is necessary to get the info. It's aready in env folder of this repo.
 
 ## Getting Started
 
 This project invokes REST API endpoints to get realtime domain availability using Flutter application.
+
+## Running the App
+
+Enter the domain you wish to search, and hit Search. At the moment the results are shown within the console. I'm working on pulling them within scaffold.
+
 
 ## Blueprint
 
