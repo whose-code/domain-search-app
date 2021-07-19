@@ -1,16 +1,12 @@
 # domainsapp
 
-A new Flutter project.
+before getting started, run 
+flutter pub get
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project invokes REST API endpoints to get realtime domain availability using Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Blueprint
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![sketch](https://user-images.githubusercontent.com/49828191/126122918-172bb5a8-b1f8-4cba-a36e-22b9e2c96cd1.png)
