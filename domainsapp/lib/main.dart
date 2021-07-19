@@ -28,7 +28,7 @@ class SearchPage extends StatefulWidget {
   final String title;
 
   final dio = Dio(BaseOptions(
-      baseUrl: 'https://api.godaddy.com/v1/domains/available',
+      baseUrl: 'https://api.ote-godaddy.com/v1/domains/available',
       headers: {
         'Authorization': dotenv.env['GODADDY_API_KEY'],
         'Accept': 'application/json',
@@ -47,17 +47,18 @@ class _SearchPageState extends State<SearchPage> {
   void searchDomains(String query) async {
     final response = await widget.dio.get('', queryParameters: {
       'domain': query,
-    });
+    },
 
-    // return response.data['available'];
-    Text(
-                    'searchDomains1()',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 22,
-                      fontWeight:FontWeight.bold,
-                    ),
-                    );
+    );
+    print(response);
+    // Text(
+    //                 'searchDomains1()',
+    //                 style: TextStyle(
+    //                   color: Colors.grey,
+    //                   fontSize: 22,
+    //                   fontWeight:FontWeight.bold,
+    //                 ),
+    //                 );
   }
 
   @override
@@ -126,14 +127,14 @@ class _SearchPageState extends State<SearchPage> {
                       ),
                     ),
                   ),
-                  Text(
-                    'searchDomains()',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 22,
-                      fontWeight:FontWeight.bold,
-                    ),
-                  )
+                  // Text(
+                  //   'searchDomains()',
+                  //   style: TextStyle(
+                  //     color: Colors.grey,
+                  //     fontSize: 22,
+                  //     fontWeight:FontWeight.bold,
+                  //   ),
+                  // )
                 ],
               ),
             ),
